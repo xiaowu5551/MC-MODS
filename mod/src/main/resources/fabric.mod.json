@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mod_46937b35",
+  "version": "${version}",
+  "name": "背包火把与不死图腾",
+  "description": "背包里的火把等光源不需要拿在手上也可以照明（复用 LambDynamicLights 的移动光源），背包里的不死图腾不需要拿在手上也可以在致命时触发。副手放盾牌、火把扔背包，从此不再纠结。",
+  "license": "SEE LICENSE IN LICENSE",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cn.blockforge.generated.mod46937b35.GeneratedMod"
+    ]
+  },
+  "mixins": [
+    "mod_46937b35.mixins.json",
+    {
+      "config": "mod_46937b35.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "lambdynlights": ">=2.3.0"
+  }
+}
